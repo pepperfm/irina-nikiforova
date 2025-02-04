@@ -12,9 +12,6 @@ jobs:
   ci:
     runs-on: ${{ matrix.os }}
 
-    env:
-      NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
-
     strategy:
       matrix:
         os: [ubuntu-latest]
