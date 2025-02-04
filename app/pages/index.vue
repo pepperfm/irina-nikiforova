@@ -135,9 +135,8 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     >
       <!-- ms:py-26 md:py-12 py-14 -->
       <NuxtImg
-        format="jpg"
-        src="banner_omg.jpg"
-        class="h-50 transform"
+        format="webp"
+        src="banner_omg.webp"
       />
     </ULandingHero>
 
