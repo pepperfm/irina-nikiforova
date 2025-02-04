@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const nuxtApp = useNuxtApp()
 const { updateHeadings } = useScrollspy()
 
@@ -27,11 +26,11 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
 <template>
   <UHeader :links="links">
     <template #logo>
-<!--      I.N. --><UBadge
-      label="I.N."
-      variant="subtle"
-      class="mb-0.5"
-    />
+      <!--      I.N. --><UBadge
+        label="I.N."
+        variant="subtle"
+        class="mb-0.5"
+      />
     </template>
     <template #right>
       <UColorModeButton size="sm" />
