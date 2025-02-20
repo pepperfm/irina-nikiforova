@@ -25,7 +25,7 @@
         target="_blank"
         to="https://https://t.me/irina_pro_wellness"
       >
-        <UIcon name="i-logos:telegram" />
+        <UIcon name="i-logos:telegram" class="w-7 h-7" />
       </NuxtLink>
     </template>
   </UFooter>

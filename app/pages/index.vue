@@ -1,54 +1,9 @@
 <script setup lang="ts">
 import type { InferType } from 'yup'
 import { object, string } from 'yup'
-import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import type { FormSubmitEvent } from '#ui/types'
 
-const breakpoints = useBreakpoints(breakpointsTailwind)
-const lgAndGreater = breakpoints.greaterOrEqual('lg')
-
 const toast = useToast()
-
-const sliderImages = [
-  'wedding1.webp',
-  'wedding2.webp',
-  'wedding3.webp',
-]
-const isImageModalOpen = ref(false)
-const imageForFullPreview = ref('')
-function showImageModal(src: string) {
-  if (lgAndGreater.value) {
-    imageForFullPreview.value = src
-    isImageModalOpen.value = true
-  }
-}
-const portfolioCollection = [
-  {
-    title: 'Sweet couple',
-    description: 'Birth gift',
-    date: '04.06.2023',
-    orientation: 'vertical',
-    image: { src: 'wedding1.webp', alt: 'wedding1.webp' },
-    badge: { label: 'Virtual' },
-  },
-  {
-    title: 'Bride in forest',
-    description: 'Colorfill',
-    date: '29.04.2023',
-    orientation: 'vertical',
-    image: { src: 'wedding2.webp', alt: 'wedding2.webp' },
-    badge: { label: 'Characters' },
-  },
-  {
-    title: 'Black and white',
-    description: '',
-    date: '28.04.2023',
-    orientation: 'vertical',
-    image: { src: 'wedding3.webp', alt: 'wedding3.webp' },
-    badge: { label: 'Virtual' },
-  },
-]
-
 const services = [
   {
     title: 'Разбор анализов',
@@ -130,7 +85,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
   <div>
     <ULandingHero
       title="Ирина Никифорова"
-      description="Бизнес-партнёр Siberian Wellness | Нутрициолог"
+      description="Нутрициолог | Бизнес-партнёр Siberian Wellness"
       class="bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10"
     >
       <!-- ms:py-26 md:py-12 py-14 -->
