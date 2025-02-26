@@ -111,12 +111,11 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       :links="[
         {
           label: 'Связаться со мной',
-          trailingIcon: 'i-logos:telegram',
+          trailingIcon: 'i-simple-icons:telegram',
           size: 'lg',
           external: true,
           to: 'https://t.me/Irinanutritionist',
           target: '_blank',
-          variant: 'outline',
         },
       ]"
     >

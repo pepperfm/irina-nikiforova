@@ -14,7 +14,6 @@ export default defineAppConfig({
       rounded: 'rounded-full',
       default: {
         size: 'md',
-        color: 'black',
       },
     },
     input: {
